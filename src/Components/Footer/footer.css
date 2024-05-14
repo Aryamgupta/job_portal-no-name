@@ -190,7 +190,7 @@
 
 .footerUpperMainDiv {
   width: 100%;
-  padding: 30px 0;
+  padding: 60px 0;
   /* height: 500px; */
   /* background-color: red; */
   display: flex;
@@ -220,9 +220,10 @@
 
 .oneJobContainer {
   box-sizing: border-box;
+  padding: 20px;
 
   max-width: 250px;
-  height: 82px;
+  /* height: 82px; */
   margin: 20px 10px;
 
   background: #ffffff;
@@ -233,20 +234,66 @@
   border-radius: 30px;
 }
 
+.footerDropDownButton {
+  font-family: Lato;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30.47px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.oneJobContainer .drop-open {
+  flex-direction: column;
+
+  /* width: 100%; */
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+  /* padding: 22px 20px 22px 20px; */
+  gap: 15px;
+
+  background: #ffffff;
+  box-shadow: -3px 4px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 7px;
+  cursor: pointer;
+  /* width: 100%; */
+ /* Transition properties */
+
+}
+
+
+
+.oneJobContainer .drop-open > div {
+  /* border-bottom: 1px solid black; */
+}
+
+.oneJobContainer .drop-open > div > a {
+  font-family: Lato;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  width: 100%;
+  /* cursor: pointer; */
+}
+
 @media only screen and (max-width: 600px) {
-
-  .footerUpperMainDiv > h2  {
+  .footerUpperMainDiv > h2 {
     font-family: Lato;
-font-size: 25px;
-font-weight: 600;
-line-height: 24.38px;
-letter-spacing: 0.01em;
-text-align: left;
-
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 24.38px;
+    letter-spacing: 0.01em;
+    text-align: left;
   }
-   .oneJobContainer{
+  .oneJobContainer {
     width: 282px;
-    height: 49px;
+    /* height: 49px; */
     top: 110px;
     left: 54px;
     padding: 14px 22.5px 14px 21.5px;

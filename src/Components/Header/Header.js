@@ -7,17 +7,17 @@ import toggleIcon from "././Icons/toggleIcon.png";
 import sideBlog from "./Icons/Side blobs.png";
 
 export const Header = () => {
-  const { currentPage } = AppState();
+  const { currentPage,headerTheme } = AppState();
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div>
-      <img
+      {headerTheme == "home" && <img
         src={sideBlog}
         style={{ position: "absolute", width: "40%", minWidth: "200px" ,maxWidth:"400px"}}
-      />
+      />}
       <div className="container-lg HeaderMainDiv">
-        <div className="headerMainHeading" style={{ color: "#195359" }}>
+        <div className="headerMainHeading" style={{ color: `${headerTheme == "home"?"white":"#195359"}` }}>
           JobPortal
         </div>
         <div className="activeLinkDisplay">{currentPage}</div>
