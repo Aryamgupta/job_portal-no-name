@@ -74,6 +74,7 @@
   letter-spacing: -0.02em;
   text-align: left;
   margin: 20px 0;
+  cursor: pointer;
 }
 
 .contactUsLinks {
@@ -172,15 +173,86 @@
     text-align: left;
   }
 
-  .contactUsLinks > div{
+  .contactUsLinks > div {
     flex-direction: flex-start;
   }
 
-  .contactUsLinks >div:first-child{
+  .contactUsLinks > div:first-child {
     margin: 0 10px 0 0;
   }
 
   .contactUsLinks > div > button > img {
     width: 25px;
+  }
+}
+
+/* footer upper oart */
+
+.footerUpperMainDiv {
+  width: 100%;
+  padding: 30px 0;
+  /* height: 500px; */
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #195359;
+  margin: 0 0 50px 0;
+}
+
+.footerUpperMainDiv > h2 {
+  font-family: Lato;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48px;
+  letter-spacing: 0.04em;
+  color: white;
+}
+
+.jobSelectors {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 40px 0;
+}
+
+.oneJobContainer {
+  box-sizing: border-box;
+
+  max-width: 250px;
+  height: 82px;
+  margin: 20px 10px;
+
+  background: #ffffff;
+  border: 0.5px solid #666666;
+  box-shadow: 0px 302px 121px rgba(0, 0, 0, 0.01),
+    0px 170px 102px rgba(0, 0, 0, 0.05), 0px 75px 75px rgba(0, 0, 0, 0.09),
+    0px 19px 42px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .footerUpperMainDiv > h2  {
+    font-family: Lato;
+font-size: 25px;
+font-weight: 600;
+line-height: 24.38px;
+letter-spacing: 0.01em;
+text-align: left;
+
+  }
+   .oneJobContainer{
+    width: 282px;
+    height: 49px;
+    top: 110px;
+    left: 54px;
+    padding: 14px 22.5px 14px 21.5px;
+    gap: 0px;
+    border-radius: 16px;
+    border: 0.5px 0px 0px 0px;
+    opacity: 0px;
   }
 }
