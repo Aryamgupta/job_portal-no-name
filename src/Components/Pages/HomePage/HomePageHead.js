@@ -9,6 +9,7 @@ import toggleIcon from "././Images/toggleIcon.png";
 import sideBlog from "./Images/Side blobs.png";
 import { AppState } from "../../Context/Context";
 import { NavLink } from "react-router-dom";
+import SeachBar from "../Miscellaneous/SeachBar";
 
 export const HomePageHead = () => {
   const { currentPage, headerTheme } = AppState();
@@ -60,7 +61,10 @@ export const HomePageHead = () => {
           </div>
         </div>
       </div>
-      <MainSeachPart />
+      {/* <MainSeachPart /> */}
+      <div className="homepageSearch">
+      <SeachBar/>
+      </div>
       <img src={im1} className="im1" />
       <img src={im2} className="im2" />
       <img src={im3} className="im3" />
