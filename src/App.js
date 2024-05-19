@@ -9,11 +9,13 @@ import { Footer } from "./Components/Footer/Footer";
 import { Blogs } from "./Components/Pages/Blogs/Blogs";
 import { AboutUs } from "./Components/Pages/AboutUs/AboutUs";
 import { ContactUs } from "./Components/Pages/ContactUs/ContactUs";
+import { AppState } from "./Components/Context/Context";
 
 function App() {
+  const {headerTheme} = AppState();
   return (
     <div className="App">
-      <Header/>
+      {headerTheme != "home" && <Header/>}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/jobs" element={<JobSearchPage />} />
