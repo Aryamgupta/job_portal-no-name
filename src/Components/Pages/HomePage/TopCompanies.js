@@ -12,7 +12,7 @@ export const TopCompanies = () => {
   return (
     <div className='topCompanies'>
         <h2 className='majorHeadingClass'>Top companies</h2>
-        <div className='container-md content'>
+        <div className='container-md 1'>
             <div>
                 <img src={google}/>
             </div>

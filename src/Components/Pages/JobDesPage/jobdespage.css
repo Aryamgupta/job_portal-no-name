@@ -1,5 +1,6 @@
 .jobDesMainDiv {
   margin: 100px auto 0;
+  padding: 50px 20px;
   /* padding: 50px 100px; */
   position: relative;
 }
@@ -84,8 +85,8 @@
 
 .companydescription {
   width: 100%;
-  height: 300px;
-  padding: 50px 0 0 0;
+  /* height: 300px; */
+  /* padding: 50px 0 0 0; */
   /* background-color: red; */
 }
 
@@ -127,19 +128,15 @@
 }
 
 .jobApplyBtn {
-  /* Frame 114 */
-
-  /* Auto layout */
+  margin: min(10%, 50px) 0;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 8px 20px;
+  padding: 10px 20px;
   gap: 10px;
-
   background: #2b838c;
   border-radius: 12px;
-
   font-family: Lato;
   font-size: 22px;
   font-weight: 600;
@@ -149,7 +146,111 @@
   color: white;
 }
 
+.jobApplyBtn > img {
+  /* width: 20%; */
+}
+
+.comapnyInfoSections {
+  width: 100%;
+  /* height: 500px; */
+  /* background-color: red; */
+}
+
+.collpsePart {
+  /* Frame 117 */
+  cursor: pointer;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  /* align-items: flex-start; */
+  justify-content: space-between;
+  isolation: isolate;
+  align-items: center;
+  padding: 4px 20px;
+
+  background: rgba(43, 131, 140, 0.3);
+  border-radius: 8px;
+
+  font-family: Lato;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #195359;
+}
+
+.collpsePart > img {
+  width: 28px;
+}
+
+.collaapsible-content {
+  overflow: hidden;
+  transition: height 0.2s ease-out;
+}
+
+.collapsible-inner {
+  padding: 1rem;
+}
+
+.collapsePartDesign {
+  margin: 20px;
+}
+
+.collapsePartDesign li,
+p {
+  font-family: Lato;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0.01em;
+  text-align: left;
+  color: #000000 !important;
+}
+
+.collapsePartDesign li::marker {
+  color: black;
+}
+
+.companyBottomInfo {
+  width: 100%;
+  /* background-color: red; */
+}
+
+.companyBottomInfo p {
+  font-family: Lato;
+  font-size: 28px;
+  font-weight: 600;
+  line-height:140%;
+  letter-spacing: 0.01em;
+  text-align: left;
+  padding: 3px 0 ;
+}
+
+
+.companyBottomInfo p>a{
+color: #007CD7;
+cursor: pointer;
+
+}
+
+.companyBottomInfo  .datee{
+  font-family: Lato;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #666666;
+  padding: 10px 0;
+  
+}
+
 @media only screen and (max-width: 866px) {
+  .jobDesMainDiv {
+    padding: 10px 20px;
+  }
+
   .companyTopInfo > div > h2 {
     font-family: Lato;
     font-size: 30px;
@@ -194,7 +295,7 @@
     margin: 10px 10px;
   }
   .companydescription {
-    padding: 20px 0 0 0;
+    /* margin: min(10%,80px) 0; */
     /* background-color: red; */
   }
 
@@ -208,10 +309,61 @@
     text-align: left;
   }
 
-  .jobApplyBtn{
+  .jobApplyBtn {
     padding: 6px 10px;
     font-size: 16px;
     line-height: 20px;
+  }
+
+  .jobApplyBtn {
+    padding: 6px 10px;
+
+    border-radius: 8px;
+
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 20.44px;
+  }
+
+  .jobApplyBtn > img {
+    width: 35px;
+  }
+
+  .collpsePart {
+    padding: 4px 20px;
+
+    border-radius: 6px;
+
+    font-size: 26px;
+    font-weight: 600;
+  }
+
+  .collpsePart > img {
+    width: 28px;
+  }
+
+  .collapsePartDesign li,
+  p {
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #000000 !important;
+  }
+
+  .companyBottomInfo p {
+    font-size: 20px;
+  }
+
+  
+  .companyBottomInfo  .datee{
+    
+    font-size: 18px;
+    font-weight: 400;
+    
+    
   }
 }
 
@@ -282,5 +434,60 @@
     line-height: 21.28px;
     letter-spacing: 0.02em;
     text-align: left;
+  }
+
+  .jobApplyBtn {
+    padding: 6px 8px;
+
+    border-radius: 8px;
+    gap: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15.44px;
+  }
+
+  .jobApplyBtn > img {
+    width: 25px;
+  }
+
+  .collpsePart {
+    padding: 4px 20px;
+
+    border-radius: 4px;
+
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .collpsePart > img {
+    width: 14px;
+  }
+
+  .collapsePartDesign li,
+  p {
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #000000 !important;
+  }
+
+  .collapsePartDesign {
+    margin: 10px;
+  }
+
+  .companyBottomInfo p {
+    font-size: 16px;
+  }
+
+  
+  .companyBottomInfo  .datee{
+    
+    font-size: 14px;
+    font-weight: 400;
+    
+    
   }
 }
