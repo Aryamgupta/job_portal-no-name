@@ -35,7 +35,7 @@
   text-align: left;
   color: #666666;
   padding: 10px 0;
-  border-bottom: 1px solid #666666;
+  border-bottom: 0.5px solid #666666 !important;
 }
 
 .jobsConatiner .jobInner {
@@ -64,7 +64,7 @@
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: 10px 0 ;
+  margin: 10px 0;
 }
 
 .jobConteinerOne > img {
@@ -157,11 +157,35 @@
   display: none;
 }
 
-.jobConteinerOne .desktopInner > div  .mobileDate{
-    display: none;
+.jobConteinerOne .desktopInner > div .mobileDate {
+  display: none;
 }
 
 @media only screen and (max-width: 576px) {
+    .jobSearchMainDiv .searchPart {
+        /* height: 300px; */
+        padding: 20px 0 50px 0;
+        /* background-color: grey; */
+      }
+    .jobSearchMainDiv .searchPart > h2 {
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 36.57px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    margin: 0 0 20px 0;
+  }
+
+  .jobsConatiner > h2 {
+    font-family: Lato;
+font-size: 13px;
+font-weight: 400;
+line-height: 19.81px;
+letter-spacing: 0.02em;
+text-align: left;
+
+  }
   .jobConteinerOne .desktopInner .desktopDes {
     display: none;
   }
@@ -230,11 +254,11 @@
     padding: 0 0 10px 0;
   }
 
-  .jobConteinerOne .desktopInner > div  .date{
+  .jobConteinerOne .desktopInner > div .date {
     display: none;
   }
 
-  .jobConteinerOne .desktopInner > div  .mobileDate {
+  .jobConteinerOne .desktopInner > div .mobileDate {
     display: flex;
     font-family: Lato;
     font-size: 9px;
@@ -255,6 +279,6 @@
     letter-spacing: 0.02em;
     text-align: left;
     margin: 0px !important;
-    padding: 0 0 5px 0 ;
+    padding: 0 0 5px 0;
   }
 }
