@@ -60,7 +60,7 @@
   all: unset;
   font-family: Lato;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 300;
   line-height: 27.43px;
   letter-spacing: 0.02em;
   text-align: left;
@@ -69,7 +69,7 @@
   width: calc(100%);
 }
 
-.serachPart input ::-webkit-input-placeholder {
+.serachPart input::-webkit-input-placeholder {
   font-family: Lato;
   font-size: 18px;
   font-weight: 300;
@@ -266,7 +266,7 @@
   font-family: Lato;
   font-size: 15px;
   font-weight: 500;
-  line-height: 33.52px;
+  line-height: 20.52px;
   letter-spacing: 0.02em;
   text-align: center;
   color: #ffffff;
