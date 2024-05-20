@@ -755,7 +755,21 @@ li {
 
 
 .homepageSearch{
-  margin: 300px 0;
+  margin: min(50%,200px) 0;
+  position: relative;
+  z-index: 5;
+}
+
+.homepageSearch>h2{
+  font-family: Migra;
+font-size: 52px;
+font-weight: 800;
+line-height: 79.23px;
+letter-spacing: 0.02em;
+text-align: center;
+color: #073944;
+/* box-shadow: 0px 10px 15px 0px #FFFFFF33; */
+z-index: 5;
 }
 
 @media screen and (max-width: 1024px) {

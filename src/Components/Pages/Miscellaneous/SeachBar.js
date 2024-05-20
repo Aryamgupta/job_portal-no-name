@@ -1,31 +1,32 @@
 import React from "react";
 import "./Miscellanous.css";
-import jobCat from "./Images/jobCat.svg"
-import jobLoc from "./Images/jobLoc.svg"
-import jobKey from './Images/jobKey.svg';
+import jobCat from "./Images/jobCat.svg";
+import jobLoc from "./Images/jobLoc.svg";
+import jobKey from "./Images/jobKey.svg";
 
 const SeachBar = () => {
   return (
     <div className="serachPart">
-      <h2>Elevate Your Job Search Experience</h2>
       <div className="inside">
-        <div className="jobKeyWord">
-            <img src={jobKey} />
-          <input placeholder="Job Title, Keywords or Company"/>
+        <div className="col-lg-5 col-md-12 col-sm-12 jobKeyWord">
+          <img src={jobKey} />
+          <input placeholder="Job Title, Keywords or Company" />
         </div>
-        <div style={{width:"1px",height:"80px",background:"#BCBCBC"}}></div>
+        <div className="col-md-12 col-sm-0 dividerr firstDiverder"></div>
 
-        <div className="jobLocation">
-        <img src={jobLoc} />
+        <div className="col-lg-2 col-md-4 col-sm-12  jobLocation">
+          <img src={jobLoc} />
           <input placeholder="Location" />
         </div>
-        <div style={{width:"1px",height:"80px",background:"#BCBCBC"}}></div>
-        <div className="jobRole">
-        <img src={jobCat} />
-          <input placeholder="Job Category"/>
-        
+        <div
+          className="dividerr"
+          style={{ width: "0.5px", height: "80px", background: "#BCBCBC" }}
+        ></div>
+        <div className="col-lg-3 col-md-4 col-sm-12 jobRole">
+          <img src={jobCat} />
+          <input placeholder="Job Category" />
         </div>
-        <button className="searchBtn">Find Jobs</button>
+        <button className="col-lg-1.5 searchBtn">Find Jobs</button>
       </div>
     </div>
   );

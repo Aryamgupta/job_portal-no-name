@@ -63,6 +63,7 @@ export const HomePageHead = () => {
       </div>
       {/* <MainSeachPart /> */}
       <div className="homepageSearch">
+        <h2>Elevate Your Job Search Experience</h2>
       <SeachBar/>
       </div>
       <img src={im1} className="im1" />
