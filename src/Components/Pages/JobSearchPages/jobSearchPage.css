@@ -1,0 +1,260 @@
+.jobSearchMainDiv {
+  width: 100%;
+  /* height: 400px; */
+  /* background-color: red; */
+  margin: 100px 0 0 0;
+}
+
+.jobSearchMainDiv .searchPart {
+  /* height: 300px; */
+  padding: 50px 0 100px 0;
+  /* background-color: grey; */
+}
+
+.jobSearchMainDiv .searchPart > h2 {
+  font-family: Lato;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 60.95px;
+  letter-spacing: 0.01em;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.jobsConatiner {
+  /* height: 400px; */
+  /* background-color: red; */
+}
+
+.jobsConatiner > h2 {
+  font-family: Lato;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30.47px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #666666;
+  padding: 10px 0;
+  border-bottom: 1px solid #666666;
+}
+
+.jobsConatiner .jobInner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.oneJobContainerR {
+  width: 100%;
+  /* height: 100px; */
+  border: 1px solid #6666664d;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.jobConteinerOne {
+  width: 100%;
+  /* height: 200px; */
+  /* background-color: red; */
+  border-radius: 10px;
+  border: 1px solid #6666664d;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 10px 0 ;
+}
+
+.jobConteinerOne > img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  background: #d9d9d9;
+  flex-shrink: 0;
+  margin: 0 20px 20px 0;
+}
+
+.jobConteinerOne .desktopInner {
+  /* flex-grow: 0.7; */
+  /* flex-shrink: 1; */
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  /* padding: 0px 10px 0 30px; */
+}
+
+.jobConteinerOne .desktopInner > div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.jobConteinerOne .desktopInner > div .companyName {
+  font-family: Lato;
+  font-size: 33px;
+  font-weight: 700;
+  line-height: 50.28px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #000000;
+}
+
+.jobConteinerOne .desktopInner > div .date {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #666666 !important;
+}
+
+.jobConteinerOne .desktopInner > div .position {
+  font-family: Lato;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 33.52px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #000000;
+
+  width: 100%;
+}
+
+.jobConteinerOne .desktopInner .desktopDes > p {
+  font-family: Lato;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30.47px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #666666 !important;
+  padding: 0px !important;
+}
+
+.jobConteinerOne .desktopInner .desktopDes > button {
+  /* Frame 114 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 22px;
+  gap: 10px;
+  color: white;
+
+  background: #2b838c;
+  border-radius: 12px;
+}
+
+.jobConteinerOne .mobileDes {
+  display: none;
+}
+
+.jobConteinerOne .desktopInner > div  .mobileDate{
+    display: none;
+}
+
+@media only screen and (max-width: 576px) {
+  .jobConteinerOne .desktopInner .desktopDes {
+    display: none;
+  }
+
+  .jobConteinerOne .mobileDes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: flex-start;
+    width: 100%;
+    padding: 10px 0 0 0;
+  }
+
+  .jobConteinerOne .mobileDes > p {
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21.33px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    padding: 0px !important;
+    color: #666666 !important;
+  }
+
+  .jobConteinerOne .mobileDes > button {
+    /* Frame 114 */
+
+    /* Auto layout */
+    flex-grow: 0 !important;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; */
+    width: fit-content;
+    padding: 8px 12px;
+    gap: 10px;
+
+    background: #2b838c;
+    border-radius: 8px;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21.33px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: white;
+  }
+
+  .jobConteinerOne > img {
+    width: 56px;
+    height: 56px;
+    border-radius: 10px;
+    background: #d9d9d9;
+    flex-shrink: 0;
+    margin: 0 20px 20px 0;
+  }
+
+  .jobConteinerOne .desktopInner > div .companyName {
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27.43px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    margin: 0px !important;
+    padding: 0 0 10px 0;
+  }
+
+  .jobConteinerOne .desktopInner > div  .date{
+    display: none;
+  }
+
+  .jobConteinerOne .desktopInner > div  .mobileDate {
+    display: flex;
+    font-family: Lato;
+    font-size: 9px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #666666 !important;
+    padding: 0px !important;
+    margin: 0px !important;
+  }
+
+  .jobConteinerOne .desktopInner > div .position {
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24.38px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    margin: 0px !important;
+    padding: 0 0 5px 0 ;
+  }
+}

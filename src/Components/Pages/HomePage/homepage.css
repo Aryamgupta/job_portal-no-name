@@ -747,8 +747,12 @@ li {
   text-align: left;
 }
 
+.homeOneBlogContainer>button>img path{
+  fill: red;
+}
+
 .homepageSearch {
-  margin: min(30%, 250px) 0;
+  margin: min(30%, 200px) 0;
   position: relative;
   z-index: 5;
 }
@@ -765,10 +769,16 @@ li {
   z-index: 5;
 }
 
-@media screen and (max-width: 1024px) {
-  .homeOneBlogContainer {
-    /* padding: ; */
+@media screen and (max-width: 1220px) {
+  .homepageSearch {
+    margin: min(30%, 250px) 0;
+    position: relative;
+    z-index: 5;
   }
+}
+
+@media screen and (max-width: 1024px) {
+  
   .homeOneBlogContainer .ques {
     font-family: Lato;
     font-size: 25px;
