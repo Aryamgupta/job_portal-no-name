@@ -9,17 +9,17 @@ const FooterUpper = () => {
       <div className="jobSelectors row container-xxl">
         <div className="oneJobContainer col-xl-3 col-lg-2.8 col-md-6">
           <button
-            class="footerDropDownButton"
+            className="footerDropDownButton"
             type="button"
             id="dropdownMenuButton"
             data-toggle="dropdown"
             aria-haspopup="true"
             aria-expanded="false"
           >
-            Job Collections <img src={downBtn} />
+            Job Collections <img src={downBtn} alt="down" />
           </button>
           <div
-            class="dropdown-menu drop-open"
+            className="dropdown-menu drop-open"
             aria-labelledby="dropdownMenuButton"
           >
             <div>
@@ -38,17 +38,17 @@ const FooterUpper = () => {
         </div>
         <div className="oneJobContainer col-xl-3 col-lg-2.8 col-md-6">
           <button
-            class="footerDropDownButton"
+            className="footerDropDownButton"
             type="button"
             id="dropdownMenuButton"
             data-toggle="dropdown"
             aria-haspopup="true"
             aria-expanded="false"
           >
-            Job by Location <img src={downBtn} />
+            Job by Location <img src={downBtn} alt="down" />
           </button>
           <div
-            class="dropdown-menu drop-open"
+            className="dropdown-menu drop-open"
             aria-labelledby="dropdownMenuButton"
           >
             <div>
@@ -67,7 +67,7 @@ const FooterUpper = () => {
         </div>
         <div className="oneJobContainer col-xl-3 col-lg-2.8 col-md-6">
           <button
-            class="footerDropDownButton"
+            className="footerDropDownButton"
             type="button"
             id="dropdownMenuButton"
             data-toggle="dropdown"
@@ -75,10 +75,10 @@ const FooterUpper = () => {
             aria-expanded="false"
           >
             Jobs by Role
-            <img src={downBtn} />
+            <img src={downBtn} alt="down" />
           </button>
           <div
-            class="dropdown-menu drop-open"
+            className="dropdown-menu drop-open"
             aria-labelledby="dropdownMenuButton"
           >
             <div>
@@ -97,17 +97,17 @@ const FooterUpper = () => {
         </div>
         <div className="oneJobContainer col-xl-3 col-lg-2.8 col-md-6">
           <button
-            class="footerDropDownButton"
+            className="footerDropDownButton"
             type="button"
             id="dropdownMenuButton"
             data-toggle="dropdown"
             aria-haspopup="true"
             aria-expanded="false"
           >
-            Remote Jobs <img src={downBtn} />
+            Remote Jobs <img src={downBtn} alt="down" />
           </button>
           <div
-            class="dropdown-menu drop-open"
+            className="dropdown-menu drop-open"
             aria-labelledby="dropdownMenuButton"
           >
             <div>

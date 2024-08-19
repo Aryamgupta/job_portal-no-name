@@ -10,6 +10,7 @@ import sideBlog from "./Images/Side blobs.png";
 import { AppState } from "../../Context/Context";
 import { NavLink } from "react-router-dom";
 import SeachBar from "../Miscellaneous/SeachBar";
+import StyleCompanies from "./StyleCompanies";
 
 export const HomePageHead = () => {
   const { currentPage, headerTheme } = AppState();
@@ -17,6 +18,7 @@ export const HomePageHead = () => {
   return (
     <div className="homepageHeadMainDiv">
       <div style={{ position: "relative" }}>
+
         <img
           src={sideBlog}
           style={{

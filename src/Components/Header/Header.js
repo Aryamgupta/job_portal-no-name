@@ -2,13 +2,19 @@ import React, { useState } from "react";
 import "./header.css";
 import { AppState } from "../Context/Context";
 
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import toggleIcon from "././Icons/toggleIcon.png";
 import sideBlog from "./Icons/Side blobs.png";
 
 export const Header = () => {
   const { currentPage, headerTheme } = AppState();
   const [isOpen, setIsOpen] = useState(false);
+
+  const location = useLocation();
+
+  console.log(location.pathname.split('/')[1])
+
+  let currentLocation = location.pathname.split('/')[1]
 
   return (
     <div
@@ -23,7 +29,7 @@ export const Header = () => {
         backgroundColor:"white"
       }}
     >
-      {headerTheme == "home" && (
+      {headerTheme === "home" && (
         <img
           src={sideBlog}
           style={{
@@ -37,9 +43,9 @@ export const Header = () => {
       <div className="container-lg HeaderMainDiv">
         <div
           className="headerMainHeading"
-          style={{ color: `${headerTheme == "home" ? "white" : "#195359"}` }}
+          style={{ color: `${headerTheme === "home" ? "white" : "#195359"}` }}
         >
-          JobPortal
+          JobSkip
         </div>
         <div className="activeLinkDisplay">{currentPage}</div>
         <div className="otherNavBarItem">
@@ -54,18 +60,19 @@ export const Header = () => {
           <div
             className={`toggle-mobile ${isOpen ? "dropOpen" : ""}`}
             id="navBarDropDown"
+            
           >
             <div>
               <NavLink to="/">Home</NavLink>
             </div>
             <div>
-              <NavLink to="jobs">Jobs</NavLink>
+              <NavLink to="jobs" className={`${currentLocation === "jobs"?"activeLink":""}`}>Jobs</NavLink>
             </div>
             <div>
-              <NavLink to="internships">Internships</NavLink>
+              <NavLink to="internships" className={`${currentLocation === "internships"?"activeLink":""}`}>Internships</NavLink>
             </div>
             <div>
-              <NavLink to="blogs">Blogs</NavLink>
+              <NavLink to="blogs" className={`${currentLocation === "blogs"?"activeLink":""}`}>Blogs</NavLink>
             </div>
           </div>
         </div>

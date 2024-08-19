@@ -28,7 +28,7 @@ export const Footer = () => {
           </div>
         </div>
         <div className="footerSideDisplay">
-          <p>JobPortal</p>
+          <p>JobSkip</p>
           <img src={footerShape} />
         </div>
         <FooterContactLinks classType="desktopContactDiv" />
